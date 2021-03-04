@@ -13,37 +13,33 @@
     </head>
     <body>
    
-        <nav class="navbar sticky-top navbar-light bg-light">
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                 <div class="modal-content">
+      
+                    <div class="modal-body">
+                        <textarea class="newcard-text" name="create-newcard" col-4s="30" rows="2"></textarea>   
+                    </div>
+                    <div class="container newcard-actions">
+                        <i class="fas fa-camera"></i>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="modal-card-footer">
+                        <button type="button" class="cancel-button btn btn-light" data-dismiss="modal">Cancel</button>
+                        <form action="">
+                            <button type="submit" class="btn btn-success">Publish</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar fixed-top navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <i class="fab fa-instagram"></i>
                     Instagram
                 </a>
-                <button type="button" class="btn btn-success ml-auto mr-3" data-toggle="modal" data-target="#myModal"> Create a new post</button>
-
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
+                <button type="button" class="btn btn-success ml-auto mr-3" data-toggle="modal" data-target="#myModal"> Create a new card</button>
 
                 <div class="dropdown">
                     <a class="btn text-secondary bg-transparent dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -61,8 +57,8 @@
             </div>
         </nav>
         
-        <div class="container-fluid">
-            <ul class="d-flex justify-content-center nav nav-pills my-2" id="pills-tab" role="tablist">
+        
+            <ul class="pills-tab d-flex justify-content-center nav nav-pills my-1" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
                 </li>
@@ -70,61 +66,58 @@
                     <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></a>
                 </li>
             </ul>
-        </div>
+        
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="container-fluid grid-view">
+            <div class="tab-pane fade show active grid-view" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        
                     <div class="row">
-
-                            <div class="col p-0">
+                            <div class="col-4 p-0">
                                 <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="">
                             </div>
                         
-                            <div class="col p-0">
+                            <div class="col-4 p-0">
                                 <img src="https://images.unsplash.com/photo-1612392062126-5cc76074df9c?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80" alt="">
                             </div>
                        
-                        
-                            <div class="col p-0">
+                            <div class="col-4 p-0">
                                 <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80" alt="">
                             </div>
                     </div>
                     <div class="row">
                         
-                            <div class="col p-0">
-                                <img src="https://images.unsplash.com/photo-1519150268069-c094cfc0b3c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2156&q=80" alt="">
+                            <div class="col-4 p-0">
+                                <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="">
                             </div>
                         
-                            <div class="col p-0">
-                                <img src="https://images.unsplash.com/photo-1519150268069-c094cfc0b3c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2156&q=80" alt="">
+                            <div class="col-4 p-0">
+                                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="">
                             </div>
                        
-                            <div class="col p-0">
-                                <img src="https://images.unsplash.com/photo-1519150268069-c094cfc0b3c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2156&q=80" alt="">
+                            <div class="col-4 p-0">
+                                <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="">
                             </div>
                     </div>
                     <div class="row">
                         
-                            <div class="col p-0">
-                                <img src="https://images.unsplash.com/photo-1519150268069-c094cfc0b3c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2156&q=80" alt="">
+                            <div class="col-4 p-0">
+                                <img src="https://images.unsplash.com/photo-1475090169767-40ed8d18f67d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="">
                             </div>
                         
-                            <div class="col p-0">
-                                <img src="https://images.unsplash.com/photo-1519150268069-c094cfc0b3c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2156&q=80" alt="">
+                            <div class="col-4 p-0">
+                                <img src="https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="">
                             </div>
                        
-                            <div class="col p-0">
-                                <img src="https://images.unsplash.com/photo-1519150268069-c094cfc0b3c8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2156&q=80" alt="">
+                            <div class="col-4 p-0">
+                                <img src="https://images.unsplash.com/photo-1504113888839-1c8eb50233d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1615&q=80" alt="">
                             </div>
                     </div>
-                </div>
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="post-wrapper d-flex-column mx-auto align-items-center">
+                <div class=" card-wrapper d-flex-col-4umn mx-auto align-items-center">
 
-                    <div class="post">
-                        <div class="header side-spacing d-flex">
-                            <p>My first photo</p>
+                    <div class="card">
+                        <div class="card-header side-spacing d-flex">
+                            <p>#1</p>
                             <p class="date">12/14</p>
                         </div>
 
@@ -132,7 +125,7 @@
                             <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60">
                         </div>
 
-                        <div class="footer side-spacing">
+                        <div class="card-footer side-spacing">
                             <p class="likes-count">23 Likes</p>
                             <p>This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with #BreatheCode </p>
                             
@@ -140,7 +133,7 @@
                                 <div>
                                     <i class="far fa-heart"></i>
                                 </div>
-                                <div class="">
+                                <div>
                                     <p class="mb-0 ml-4">Comment...</p>
                                 </div>
                                 <div class="ml-auto">
@@ -151,19 +144,222 @@
                         </div>
                     </div>
                     
-                    <div class="post">
-                        <div class="header side-spacing d-flex">
-                            <p>My first photo</p>
-                            <p class="date">12/14</p>
+                    <div class="card">
+                        <div class="card-header side-spacing d-flex">
+                            <p>#2</p>
+                            <p class="date">12/16</p>
                         </div>
 
                         <div>
                             <img src="https://images.unsplash.com/photo-1612392062126-5cc76074df9c?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80">
                         </div>
 
-                        <div class="footer side-spacing">
+                        <div class="card-footer side-spacing">
                             <p class="likes-count">23 Likes</p>
-                            <p>This is my first photo of the feed, this is a multi line comment for testing purposes. I am learning to code with #BreatheCode </p>
+                            <p>Hot Dogs are awesome</p>
+                            
+                            <div class="user-actions d-flex mx-3">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p>Comment...</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header side-spacing d-flex">
+                            <p>#3</p>
+                            <p class="date">12/18</p>
+                        </div>
+
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80">
+                        </div>
+
+                        <div class="card-footer side-spacing">
+                            <p class="likes-count">23 Likes</p>
+                            <p>Lots of berries on this breakfast</p>
+                            
+                            <div class="user-actions d-flex mx-3">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p>Comment...</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header side-spacing d-flex">
+                            <p>#4</p>
+                            <p class="date">12/20</p>
+                        </div>
+
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60">
+                        </div>
+
+                        <div class="card-footer side-spacing">
+                            <p class="likes-count">23 Likes</p>
+                            <p>Some sushi here</p>
+                            
+                            <div class="user-actions d-flex mx-3">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p>Comment...</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header side-spacing d-flex">
+                            <p>#5</p>
+                            <p class="date">12/21</p>
+                        </div>
+
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60">
+                        </div>
+
+                        <div class="card-footer side-spacing">
+                            <p class="likes-count">23 Likes</p>
+                            <p>Vegan pasta</p>
+                            
+                            <div class="user-actions d-flex mx-3">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p>Comment...</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header side-spacing d-flex">
+                            <p>#6</p>
+                            <p class="date">12/23</p>
+                        </div>
+
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80">
+                        </div>
+
+                        <div class="card-footer side-spacing">
+                            <p class="likes-count">23 Likes</p>
+                            <p>Couldn't forget a burger</p>
+                            
+                            <div class="user-actions d-flex mx-3">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p>Comment...</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header side-spacing d-flex">
+                            <p>#7</p>
+                            <p class="date">12/25</p>
+                        </div>
+
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1475090169767-40ed8d18f67d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+                        </div>
+
+                        <div class="card-footer side-spacing">
+                            <p class="likes-count">23 Likes</p>
+                            <p>This grilled sandwich looks so great</p>
+                            
+                            <div class="user-actions d-flex mx-3">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p>Comment...</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header side-spacing d-flex">
+                            <p>#8</p>
+                            <p class="date">12/27</p>
+                        </div>
+
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80">
+                        </div>
+
+                        <div class="card-footer side-spacing">
+                            <p class="likes-count">23 Likes</p>
+                            <p>Who doesn't love pizza!!</p>
+                            
+                            <div class="user-actions d-flex mx-3">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <p>Comment...</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header side-spacing d-flex">
+                            <p>#9</p>
+                            <p class="date">12/30</p>
+                        </div>
+
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1504113888839-1c8eb50233d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1615&q=80">
+                        </div>
+
+                        <div class="card-footer side-spacing">
+                            <p class="likes-count">23 Likes</p>
+                            <p>Pancakes are a favorite</p>
                             
                             <div class="user-actions d-flex mx-3">
                                 <div>
